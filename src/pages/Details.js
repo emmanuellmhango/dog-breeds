@@ -16,7 +16,7 @@ const Details = () => {
   return (
     <div className="itemContainer">
       <div className="nav-back">
-        <NavLink to="/" className="back-link">
+        <NavLink to="/dog-breeds" className="back-link">
           <span className="icon-back">
             <FaChevronLeft />
             <span className="back-text">Home</span>
