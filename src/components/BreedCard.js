@@ -5,12 +5,13 @@ import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import '../pages/Home.css';
 import Image from '../operations/GetCardImage';
 
-const BreedCard = ({ breedName, breedSubCategories}) => { 
+const BreedCard = ({ breedName, breedSubCategories }) => {
   const cardImg = Image(breedName);
   const subcat = breedSubCategories.length;
   const navigate = useNavigate();
   return (
-    <div style={{
+    <div
+      style={{
         backgroundImage: `url(${cardImg})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
