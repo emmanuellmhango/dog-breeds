@@ -163,8 +163,8 @@ If you like this project feel free to leave a star ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-This project is based on the design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio). By gratitude there goes to him for the wonderful job he has done.
-Again, I would like to thank Microverse for motivating me to build this beautiful project
+> This project is based on the design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio). My gratitude goes to him for the wonderful job he has done.
+> Again, I would like to thank Microverse for motivating me to build this beautiful project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
