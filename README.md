@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://jellywiz.github.io/space-travlers/)
+- [Live Demo Link](https://emmanuellmhango.github.io/dog-breeds/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,7 +95,7 @@ Clone this repository to your desired folder:
 
 - Clone the project using by running the following command:
 
-`git clone https://github.com/jellywiz/space-travlers.git`
+`git clone https://github.com/emmanuellmhango/dog-breeds.git`
 
 ### Install
 
@@ -124,17 +124,11 @@ You can deploy this project using: `npm run deploy`
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Muzaffer Dler**
-
-- GitHub: [@Muzaffer Dler](https://github.com/jellywiz/)
-- LinkedIn: [@Muzaffer Dler](https://www.linkedin.com/in/muzaffer-dler-473484205/)
-- Twitter: [@JellyWiz](https://twitter.com/Dark_JellyWiz)
-
-👤 **Muzaffer Dler**
+👤 **Emmanuel Mhango**
 
 - GitHub: [@Emmanuel Mhango](https://github.com/emmanuellmhango)
 - LinkedIn: [@Emmanuel Mhango](https://www.linkedin.com/in/emmanuellmhango/)
-- Twitter: [@Emmanuel Mhango](https://twitter.com/EmmanuelMhang17)
+- Angellist: [@Emmanuel Mhango](https://angel.co/u/emmanuel-mhango)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,8 +146,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add Rockets]**
-- [ ] **[Add Missions]**
+- [ ] **[Add Dog Breeds]**
+- [ ] **[Add Dog Breed information]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -169,7 +163,8 @@ If you like this project feel free to leave a star ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for motivating me to build this beautiful project
+This project is based on the design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio). By gratitude there goes to him for the wonderful job he has done.
+Again, I would like to thank Microverse for motivating me to build this beautiful project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -191,8 +186,6 @@ I would like to thank Microverse for motivating me to build this beautiful proje
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [CC](https://creativecommons.org/licenses/by-nc/4.0/) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
