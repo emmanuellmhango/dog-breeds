@@ -1,5 +1,4 @@
-function httpGet(theUrl)
-{
+function httpGet(theUrl) {
   const xmlHttp = new XMLHttpRequest();
   xmlHttp.open('GET', theUrl, false);
   xmlHttp.send(null);
@@ -7,7 +6,7 @@ function httpGet(theUrl)
 }
 
 const Image = () => {
-	const json = httpGet(`https://dog.ceo/api/breeds/image/random`);
+  const json = httpGet('https://dog.ceo/api/breeds/image/random');
   const array = JSON.parse(json);
   const url = array.message;
   return url;
