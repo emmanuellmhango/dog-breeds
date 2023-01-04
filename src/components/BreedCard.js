@@ -9,6 +9,7 @@ const BreedCard = ({ breedName, breedSubCategories }) => {
   const cardImg = Image(breedName);
   const subcat = breedSubCategories.length;
   const navigate = useNavigate();
+  const handleNavigate = () => navigate('/details', { state: [breedName, breedSubCategories] });
   return (
     <div
       style={{
@@ -17,7 +18,8 @@ const BreedCard = ({ breedName, breedSubCategories }) => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       }}
-      onClick={() => navigate('/details', { state: [breedName, breedSubCategories] })}
+      onClick={handleNavigate}
+      onKeyDown={handleNavigate}
     >
       <div className="card">
         <div className="icon">
