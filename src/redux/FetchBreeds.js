@@ -5,10 +5,10 @@ const GET_BREEDS = 'dog-breeds/redux/GET_BREEDS';
 
 const httpGet = async (theUrl) => {
   const xmlHttp = new XMLHttpRequest();
-  xmlHttp.open( "GET", theUrl, false );
-  xmlHttp.send( null );
+  xmlHttp.open('GET', theUrl, false);
+  xmlHttp.send(null);
   return xmlHttp.responseText;
-}
+};
 
 const fetchBreeds = createAsyncThunk(GET_BREEDS, async () => {
   const response = await httpGet(BASE_URL);
