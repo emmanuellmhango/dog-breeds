@@ -76,7 +76,7 @@ const Details = () => {
             </>
           ) : (
             breedSubCategories.map((sub) => (
-                <li className="category-li" key={uuid()}>
+              <li className="category-li" key={uuid()}>
                   <div className="subcategory">
                     {sub}
                   </div>
@@ -86,7 +86,7 @@ const Details = () => {
                     Pictures
                   </div>
                 </li>
-             ))
+            ))
           )}
         </ul>
       </div>

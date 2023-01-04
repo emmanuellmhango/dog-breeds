@@ -1,5 +1,4 @@
-function httpGet(theUrl)
-{
+function httpGet(theUrl) {
   const xmlHttp = new XMLHttpRequest();
   xmlHttp.open('GET', theUrl, false);
   xmlHttp.send(null);
@@ -7,10 +6,10 @@ function httpGet(theUrl)
 }
 
 const Images = (breedName, subBreed) => {
-	 const json = httpGet(`https://dog.ceo/api/breed/${breedName}/${subBreed}/images`);
-   const array = JSON.parse(json);
-   const url = array.message;
-   return url.length;
+	const json = httpGet(`https://dog.ceo/api/breed/${breedName}/${subBreed}/images`);
+  const array = JSON.parse(json);
+  const url = array.message;
+  return url.length;
 };
 
 export default Images;
