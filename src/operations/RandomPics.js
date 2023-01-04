@@ -6,7 +6,7 @@ function httpGet(theUrl) {
 }
 
 const Images = (breedName, subBreed) => {
-	const json = httpGet('https://dog.ceo/api/breed/' + breedName +'/'+subBreed+'/images');
+  const json = httpGet('https://dog.ceo/api/breed/' + breedName + '/' + subBreed + '/images');
   const array = JSON.parse(json);
   const url = array.message;
   return url.length;
