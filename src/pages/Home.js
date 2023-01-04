@@ -1,19 +1,26 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import uuid from 'react-uuid';
-
+import Image from '../operations/GetRandomImage';
 import BreedCard from "../components/BreedCard";
 import './Home.css';
 
 const Home = () => {
   const breeds = useSelector((state) => state.breeds);
-
+  const headerImg = Image();
   return (
     <>
       <div className="header">
         <div className="header-card">
-          some pic
+          <div style={{
+            backgroundImage: `url(${headerImg})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            width: '100%',
+            height: '100%',
+          }}>
+          </div>
         </div>
         <div className="header-card">
           <span className="header-title">
@@ -24,14 +31,16 @@ const Home = () => {
       <div className="stats">
         <span>DOG BREEDS</span>
       </div>
-      <div className="container">
+      <div>
+        <ul className="breeds container">
         {
-          breeds.map((breed) => (
-            <NavLink to="/details" key={`${breed}-${uuid()}`} className="card-link">
+            breeds.map((breed) => (
+            <li className="breed-category" key={uuid()}>
               <BreedCard breedName={breed.breedName} breedSubCategories={breed.subCategories} />
-            </NavLink>
+            </li>
           ))
         }
+        </ul>
       </div>
     </>
   );

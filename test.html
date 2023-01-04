@@ -20,9 +20,11 @@ function httpGet(theUrl)
 
 async function getRandomImage(breedName)
 {
-	const json = await httpGet(`https://dog.ceo/api/breed/${breedName}/images/random`);
+	const json = await httpGet(`https://dog.ceo/api/breed/${breedName}/images/random/4`);
   const array = JSON.parse(json);
   const url = array.message;
+  console.log(url);
+  url.forEach((v) => console.log(v))
   //const image = document.getElementById('dogImage');
   //image.src = url;
   return url;

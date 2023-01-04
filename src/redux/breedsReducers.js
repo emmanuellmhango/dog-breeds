@@ -12,7 +12,7 @@ export default function breedsReducer(state = initialData, action) {
     case `${GET_BREEDS}/fulfilled`:
       return Object.keys(action.payload).map((key) => ({
         breedName: key,
-        subCategories: [`${action.payload[key]}`],
+        subCategories: [action.payload[key]],
       }));
     default:
       return state;
