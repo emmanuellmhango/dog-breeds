@@ -7,7 +7,7 @@ import Image from '../operations/GetCardImage';
 
 const BreedCard = ({ breedName, breedSubCategories }) => {
   const cardImg = Image(breedName);
-  const subcat = breedSubCategories.length;
+  const subcat = breedSubCategories[0].length;
   const navigate = useNavigate();
   const handleNavigate = () => navigate('/details', { state: [breedName, breedSubCategories] });
   return (

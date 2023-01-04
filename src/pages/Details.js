@@ -37,6 +37,7 @@ const Details = () => {
         <div className="details-header">
           <span className="breed-name">
             {breedDetails}
+            {' '}
             BREED
           </span>
           <br />
