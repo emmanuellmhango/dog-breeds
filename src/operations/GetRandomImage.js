@@ -1,8 +1,8 @@
 function httpGet(theUrl)
 {
   const xmlHttp = new XMLHttpRequest();
-  xmlHttp.open( "GET", theUrl, false );
-  xmlHttp.send( null );
+  xmlHttp.open('GET', theUrl, false);
+  xmlHttp.send(null);
   return xmlHttp.responseText;
 }
 

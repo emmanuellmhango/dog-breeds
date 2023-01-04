@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import uuid from 'react-uuid';
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from 'react-router-dom';
 import { FaChevronLeft } from 'react-icons/fa';
 import Image from '../operations/GetCardImage';
 import Images from '../operations/RandomPics';
@@ -24,18 +24,20 @@ const Details = () => {
         </NavLink>
       </div>
       <div className="breedname-details-header">
-        <div style={{
-          backgroundImage: `url(${breedRandImg})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          width: '60%',
-          height: '100%',
-        }}>
-        </div>
+        <div
+          style={{
+            backgroundImage: `url(${breedRandImg})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            width: '60%',
+            height: '100%',
+          }}
+        />
         <div className="details-header">
           <span className="breed-name">
-            {breedDetails} BREED
+            {breedDetails}
+            BREED
           </span>
           <br />
           <span className="breed-cat">
@@ -44,7 +46,8 @@ const Details = () => {
         </div>
       </div>
       <div className="details-stats">
-        {breedDetails} SUB BREEDS
+        {breedDetails}
+        SUB BREEDS
       </div>
       <div className="details">
         <ul className="subcategories-details">
@@ -55,7 +58,8 @@ const Details = () => {
                   No sub-breeds found
                 </div>
                 <div className="sub-img">
-                  <span className="make-bold">0</span> <br />
+                  <span className="make-bold">0</span>
+                  <br />
                   sub-breeds
                 </div>
               </li>
@@ -64,7 +68,8 @@ const Details = () => {
                   Images Available
                 </div>
                 <div className="sub-img">
-                  <span className="make-bold">{breedImages(breedName)}</span> <br />
+                  <span className="make-bold">{breedImages(breedName)}</span>
+                  <br />
                   Images
                 </div>
               </li>
@@ -76,7 +81,8 @@ const Details = () => {
                     {sub}
                   </div>
                   <div className="sub-img">
-                    <span className="make-bold">{Images(breedName, sub)}</span> <br />
+                    <span className="make-bold">{Images(breedName, sub)}</span>
+                    <br />
                     Pictures
                   </div>
                 </li>
