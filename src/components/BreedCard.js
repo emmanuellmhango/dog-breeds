@@ -17,11 +17,11 @@ const BreedCard = ({ breedName, breedSubCategories }) => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       }}
-      onClick={() => navigate("/details", { state: [breedName, breedSubCategories] })}
+      onClick={() => navigate('/details', { state: [breedName, breedSubCategories] })}
     >
       <div className="card">
         <div className="icon">
-          <FaRegArrowAltCircleRight/>
+          <FaRegArrowAltCircleRight />
         </div>
         <span className="breed-title">
           {breedName.toUpperCase()}
@@ -36,7 +36,7 @@ const BreedCard = ({ breedName, breedSubCategories }) => {
 
 BreedCard.propTypes = {
   breedName: PropTypes.string.isRequired,
-  breedSubCategories: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string])).isRequired
+  breedSubCategories: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string])).isRequired,
 };
 
 export default BreedCard;
