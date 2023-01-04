@@ -10,31 +10,32 @@ const BreedCard = ({ breedName, breedSubCategories}) => {
   const subcat = breedSubCategories.length;
   const navigate = useNavigate();
   return (
-      <div style={{
-          backgroundImage: `url(${cardImg})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-        }}
-        onClick={() => navigate("/details", { state: [breedName, breedSubCategories] })}
-      >
-        <div className="card">
-          <div className="icon">
-            <FaRegArrowAltCircleRight/>
-          </div>
-          <span className="breed-title">
-            {breedName.toUpperCase()}
-          </span>
-          <span className="breed-categories">
-            {subcat}
-          </span>
+    <div style={{
+        backgroundImage: `url(${cardImg})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }}
+      onClick={() => navigate("/details", { state: [breedName, breedSubCategories] })}
+    >
+      <div className="card">
+        <div className="icon">
+          <FaRegArrowAltCircleRight/>
         </div>
+        <span className="breed-title">
+          {breedName.toUpperCase()}
+        </span>
+        <span className="breed-categories">
+          {subcat}
+        </span>
       </div>
+    </div>
   );
 };
 
 BreedCard.propTypes = {
   breedName: PropTypes.string.isRequired,
+  breedSubCategories: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string])).isRequired
 };
 
 export default BreedCard;
