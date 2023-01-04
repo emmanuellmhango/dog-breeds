@@ -77,15 +77,15 @@ const Details = () => {
           ) : (
             breedSubCategories.map((sub) => (
               <li className="category-li" key={uuid()}>
-                  <div className="subcategory">
-                    {sub}
-                  </div>
-                  <div className="sub-img">
-                    <span className="make-bold">{Images(breedName, sub)}</span>
-                    <br />
-                    Pictures
-                  </div>
-                </li>
+                <div className="subcategory">
+                  {sub}
+                </div>
+                <div className="sub-img">
+                  <span className="make-bold">{Images(breedName, sub)}</span>
+                  <br />
+                  Pictures
+                </div>
+              </li>
             ))
           )}
         </ul>
