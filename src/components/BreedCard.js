@@ -20,6 +20,7 @@ const BreedCard = ({ breedName, breedSubCategories }) => {
       }}
       onClick={handleNavigate}
       onKeyDown={handleNavigate}
+      role='presentation'
     >
       <div className="card">
         <div className="icon">
