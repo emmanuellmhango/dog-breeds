@@ -1,10 +1,10 @@
 import React from 'react';
 import uuid from 'react-uuid';
-import { NavLink, useLocation } from 'react-router-dom';
-import { FaChevronLeft } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 import Image from '../operations/GetCardImage';
 import Images from '../operations/RandomPics';
 import breedImages from '../operations/BreedPics';
+import NavBar from '../components/NavBar';
 import './Details.css';
 
 const Details = () => {
@@ -13,16 +13,10 @@ const Details = () => {
   const breedCatLen = breedSubCategories.length;
   const breedDetails = breedName.toString().toUpperCase();
   const breedRandImg = Image(breedName);
+  const passTitle = `${breedName} breed views`;
   return (
     <div className="itemContainer">
-      <div className="nav-back">
-        <NavLink to="/" className="back-link">
-          <span className="icon-back">
-            <FaChevronLeft />
-            <span className="back-text">Home</span>
-          </span>
-        </NavLink>
-      </div>
+      <NavBar page={passTitle} routeTo="home" />
       <div className="breedname-details-header">
         <div
           style={{

@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import uuid from 'react-uuid';
 import Image from '../operations/GetRandomImage';
 import BreedCard from '../components/BreedCard';
+import NavBar from '../components/NavBar';
 import './Home.css';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
   const headerImg = Image();
   return (
     <>
+      <NavBar page="most views" routeTo="0" />
       <div className="header">
         <div className="header-card">
           <div

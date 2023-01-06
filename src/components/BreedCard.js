@@ -7,7 +7,7 @@ import Image from '../operations/GetCardImage';
 
 const BreedCard = ({ breedName, breedSubCategories }) => {
   const cardImg = Image(breedName);
-  const subcat = breedSubCategories.length;
+  const subcat = breedSubCategories[0].length;
   const navigate = useNavigate();
   const handleNavigate = () => navigate('/details', { state: [breedName, breedSubCategories] });
   return (
@@ -39,7 +39,7 @@ const BreedCard = ({ breedName, breedSubCategories }) => {
 
 BreedCard.propTypes = {
   breedName: PropTypes.string.isRequired,
-  breedSubCategories: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string])).isRequired,
+  breedSubCategories: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string]))).isRequired,
 };
 
 export default BreedCard;
