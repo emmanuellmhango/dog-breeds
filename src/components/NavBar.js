@@ -8,23 +8,26 @@ import BreedCard from './BreedCard';
 const NavBar = ({ page, routeTo }) => {
   return (
     <ul className="nav-header">
-      <li>{
-        routeTo === 0 ?
-        (
-          <>
-            <FaChevronLeft />
-            <span className="arrow-back">
-              2015
-            </span>
-          </>
-        ) : (
-          <NavLink to="/" className="back-link">
-            <FaChevronLeft />
-            <span className="arrow-back">
-              2015
-            </span>
-          </NavLink>
-        )}
+      <li>
+        {
+          routeTo === 0
+            ?
+          (
+            <>
+              <FaChevronLeft />
+              <span className="arrow-back">
+                2015
+              </span>
+            </>
+          ) : (
+            <NavLink to="/" className="back-link">
+              <FaChevronLeft />
+              <span className="arrow-back">
+                2015
+              </span>
+            </NavLink>
+              )
+        }
       </li>
       <li className="nav-title">
         {page}
