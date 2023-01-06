@@ -1,7 +1,9 @@
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { FaChevronLeft, FaMicrophone } from 'react-icons/fa';
 import { RiSettings5Fill } from 'react-icons/ri';
 import './NavBar.css';
+import BreedCard from './BreedCard';
 
 const NavBar = ({ page, routeTo }) => {
   return (
@@ -35,6 +37,11 @@ const NavBar = ({ page, routeTo }) => {
       </li>
     </ul>
   );
+};
+
+BreedCard.propTypes = {
+  page: PropTypes.string.isRequired,
+  routeTo: PropTypes.string.isRequired,
 };
 
 export default NavBar;
