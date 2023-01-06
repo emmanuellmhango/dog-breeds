@@ -6,7 +6,6 @@ import './NavBar.css';
 import BreedCard from './BreedCard';
 
 const NavBar = ({ page, routeTo }) => {
-  return (
     <ul className="nav-header">
       <li>
         {
@@ -39,7 +38,6 @@ const NavBar = ({ page, routeTo }) => {
         <RiSettings5Fill />
       </li>
     </ul>
-  );
 };
 
 BreedCard.propTypes = {
