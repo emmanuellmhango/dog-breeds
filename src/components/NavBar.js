@@ -3,15 +3,13 @@ import PropTypes from 'prop-types';
 import { FaChevronLeft, FaMicrophone } from 'react-icons/fa';
 import { RiSettings5Fill } from 'react-icons/ri';
 import './NavBar.css';
-import BreedCard from './BreedCard';
 
 const NavBar = ({ page, routeTo }) => {
   <ul className="nav-header">
     <li>
       {
         routeTo === 0
-          ?
-          (
+          ? (
             <>
               <FaChevronLeft />
               <span className="arrow-back">
@@ -40,7 +38,7 @@ const NavBar = ({ page, routeTo }) => {
   </ul>;
 };
 
-BreedCard.propTypes = {
+NavBar.propTypes = {
   page: PropTypes.string.isRequired,
   routeTo: PropTypes.string.isRequired,
 };
