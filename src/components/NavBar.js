@@ -8,7 +8,8 @@ import BreedCard from './BreedCard';
 const NavBar = ({ page, routeTo }) => {
   return (
     <ul className="nav-header">
-      <li>{routeTo === 0 ?
+      <li>{
+        routeTo === 0 ?
         (
           <>
             <FaChevronLeft />
@@ -23,8 +24,7 @@ const NavBar = ({ page, routeTo }) => {
               2015
             </span>
           </NavLink>
-        )
-      }
+        )}
       </li>
       <li className="nav-title">
         {page}
