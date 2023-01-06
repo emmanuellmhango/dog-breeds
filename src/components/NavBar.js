@@ -12,20 +12,20 @@ const NavBar = ({ page, routeTo }) => {
         {
           routeTo === 0
             ?
-          (
-            <>
-              <FaChevronLeft />
-              <span className="arrow-back">
-                2015
-              </span>
-            </>
-          ) : (
-            <NavLink to="/" className="back-link">
-              <FaChevronLeft />
-              <span className="arrow-back">
-                2015
-              </span>
-            </NavLink>
+            (
+              <>
+                <FaChevronLeft />
+                <span className="arrow-back">
+                  2015
+                </span>
+              </>
+            ) : (
+              <NavLink to="/" className="back-link">
+                <FaChevronLeft />
+                <span className="arrow-back">
+                  2015
+                </span>
+              </NavLink>
               )
         }
       </li>
