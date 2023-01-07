@@ -39,7 +39,9 @@ const BreedCard = ({ breedName, breedSubCategories }) => {
 
 BreedCard.propTypes = {
   breedName: PropTypes.string.isRequired,
-  breedSubCategories: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string])).isRequired,
+  breedSubCategories: PropTypes.arrayOf(
+    PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string])),
+  ).isRequired,
 };
 
 export default BreedCard;
