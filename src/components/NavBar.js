@@ -4,8 +4,7 @@ import { FaChevronLeft, FaMicrophone } from 'react-icons/fa';
 import { RiSettings5Fill } from 'react-icons/ri';
 import './NavBar.css';
 
-const NavBar = ({ page, routeTo }) => {
-  return (
+const NavBar = ({ page, routeTo }) => (
     <ul className="nav-header">
       <li>
         {
@@ -38,7 +37,6 @@ const NavBar = ({ page, routeTo }) => {
       </li>
     </ul>
   );
-};
 
 NavBar.propTypes = {
   page: PropTypes.string.isRequired,
